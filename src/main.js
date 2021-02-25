@@ -18,7 +18,7 @@ axios.interceptors.request.use(config => {
   NProgress.start()
   // console.log(config)
   // 为请求头对象，添加token验证的Authorization字段
-  config.headers.token = window.sessionStorage.getItem('token')
+  config.headers.token = window.sessionStorage.getItem('Access-Token')
   console.log(config.headers.token)
   // 在最后必须 return config
   return config

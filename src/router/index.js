@@ -6,6 +6,10 @@ import HelloWorld from '../components/HelloWorld'
 import Users from '../components/user/Users.vue'
 import Article from '../components/article/Article.vue'
 import ArticleType from '../components/article/ArticleType'
+import Comment from '../components/article/Comment'
+import Want from '../components/article/Want'
+import Orders from '../components/article/Orders'
+import Admin from '../components/user/Admin'
 Vue.use(VueRouter)
 
 export default new VueRouter({
@@ -32,6 +36,22 @@ export default new VueRouter({
         {
           path: '/ArticleType',
           component: ArticleType
+        },
+        {
+          path: '/Comment',
+          component: Comment
+        },
+        {
+          path: '/Want',
+          component: Want
+        },
+        {
+          path: '/Orders',
+          component: Orders
+        },
+        {
+          path: '/admin',
+          component: Admin
         }
       ]
     }

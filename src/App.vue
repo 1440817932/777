@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-app跟逐渐
     <router-view></router-view>
   </div>
 </template>
